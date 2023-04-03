@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "792519416130",
+    "firebase_url": "https://dev-projects-kjell-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "dev-projects-kjell",
+    "storage_bucket": "dev-projects-kjell.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792519416130:android:3eccb9e6740714f07790db",
+        "android_client_info": {
+          "package_name": "com.example.weightliftingappcomposecode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792519416130-cfokqfh1lhunm0hoc15sd1f8fbjkspaj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3dMORO_w1Ef2Q614ckAeJLZ9uCpVuHn4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792519416130-cfokqfh1lhunm0hoc15sd1f8fbjkspaj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792519416130:android:0e9cc7431dbacc3a7790db",
+        "android_client_info": {
+          "package_name": "dev.kjellin.weightliftingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792519416130-cfokqfh1lhunm0hoc15sd1f8fbjkspaj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3dMORO_w1Ef2Q614ckAeJLZ9uCpVuHn4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792519416130-cfokqfh1lhunm0hoc15sd1f8fbjkspaj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792519416130:android:6895e29e1e99cca77790db",
+        "android_client_info": {
+          "package_name": "dev.kjellin.weightliftingapp3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792519416130-cfokqfh1lhunm0hoc15sd1f8fbjkspaj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3dMORO_w1Ef2Q614ckAeJLZ9uCpVuHn4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792519416130-cfokqfh1lhunm0hoc15sd1f8fbjkspaj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
