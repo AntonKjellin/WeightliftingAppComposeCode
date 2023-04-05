@@ -9,7 +9,6 @@ import dev.kjellin.weightliftingapp3.data.DatabaseFirestore
 class DashboardViewModel : ViewModel(){
 
     private lateinit var db : DatabaseFirestore
-
     val currentUser = mutableStateOf(AppUser())
     val passesFinished = mutableListOf<Pass>()
 
