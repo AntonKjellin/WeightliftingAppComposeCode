@@ -1,7 +1,7 @@
 package com.example.weightliftingappcomposecode.dataclasses
 
 data class AppUser (
-    var name : String? = null,
-    var passesDone: Int? = null,
+    var name : String? = "",
+    var passesDone: Int? = 0,
     var templateGroups: ArrayList<TemplateGroup>?= null
 )

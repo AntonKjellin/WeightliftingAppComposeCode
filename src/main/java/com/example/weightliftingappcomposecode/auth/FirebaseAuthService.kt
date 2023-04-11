@@ -3,8 +3,6 @@ package com.example.weightliftingappcomposecode.auth
 import android.app.Activity
 import com.example.weightliftingappcomposecode.dataclasses.AppUser
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
 import dev.kjellin.weightliftingapp3.data.DatabaseFirestore
 
 class FirebaseAuthService {
@@ -19,7 +17,7 @@ class FirebaseAuthService {
         user: AppUser,
         callBack: (Boolean) -> Unit
     ) {
-        auth = Firebase.auth
+        auth = FirebaseAuth.getInstance()
         db = DatabaseFirestore()
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
             if (it.isSuccessful) {
@@ -39,7 +37,7 @@ class FirebaseAuthService {
         password: String,
         callBack: (Boolean) -> Unit
     ) {
-        auth = Firebase.auth
+        auth = FirebaseAuth.getInstance()
         auth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
             if (it.isSuccessful) {
                 callBack.invoke(true)
@@ -53,7 +51,7 @@ class FirebaseAuthService {
 
     // Logout user.
     fun logoutUser() {
-        auth = Firebase.auth
+        auth = FirebaseAuth.getInstance()
         auth.signOut()
     }
 

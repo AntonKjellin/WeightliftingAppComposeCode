@@ -19,7 +19,6 @@ class DatabaseFirestore {
 
         val userID = auth.uid
         val userCol = db.collection("users")
-
         val sets =ArrayList<ExerciseSet>()
         sets.add(ExerciseSet(5, 85))
         sets.add(ExerciseSet(4, 80))
@@ -43,13 +42,13 @@ class DatabaseFirestore {
             )
         )
 
-        currentUserDoc.collection("passTemplates").document("Example").set(PassTemplate("Example", exercises))
+        currentUserDoc.collection("TemplateGroups").document("GroupExample").collection("Templates").document("TemplateExample").set(PassTemplate("Example", exercises))
 
     }
 
-    fun addPassTemplate(passTemplate: PassTemplate) {
+    fun addPassTemplate(groupName:String,passTemplate: PassTemplate) {
         val userID = auth.uid
-        val dbRef = db.collection("users").document(userID.toString()).collection("passTemplates")
+        val dbRef = db.collection("users").document(userID.toString()).collection("TemplateGroups").document(groupName).collection("Templates")
         dbRef.add(passTemplate)
     }
 

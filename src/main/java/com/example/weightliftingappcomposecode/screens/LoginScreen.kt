@@ -16,41 +16,50 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.weightliftingappcomposecode.models.LoginViewModel
+import com.example.weightliftingappcomposecode.ui.theme.WeightliftingAppComposeCodeTheme
 
 
 @Preview(showBackground = true)
 @Composable
 fun ScreenPreview(){
-    LoginScreen()
+        LoginScreen()
 }
 
 @Composable
 fun LoginScreen(){
-    val vm = LoginViewModel()
-    
- Column(
-     modifier = Modifier
-         .fillMaxSize()
- ) {
+        val vm = LoginViewModel()
 
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+        ) {
+            Spacer(modifier = Modifier.weight(1.0f))
 
-     Column(
-         modifier = Modifier.align(CenterHorizontally)
-     ) {
-         EmailField(vm.emailState)
-         PasswordField(vm.passwordState)
-         Button(onClick = { Log.i("PIA11DEbug",vm.emailState.toString()+" : "+vm.passwordState.toString()) },
-         modifier = Modifier
-             .widthIn(120.dp, 300.dp)
-             .align(CenterHorizontally)) {
-             Text(text = "Login")
-         }
-         Text(modifier = Modifier
-             .align(CenterHorizontally)
-             .clickable { }, text = "Already got an account? Click here!")
-     }
- }
-
+            Column(
+                modifier = Modifier.align(CenterHorizontally)
+            ) {
+                EmailField(vm.emailState)
+                PasswordField(vm.passwordState)
+                Button(
+                    onClick = {
+                        Log.i(
+                            "PIA11Debug",
+                            vm.emailState.toString() + " : " + vm.passwordState.toString()
+                        )
+                    },
+                    modifier = Modifier
+                        .widthIn(120.dp, 300.dp)
+                        .align(CenterHorizontally)
+                ) {
+                    Text(text = "Login")
+                }
+                Text(modifier = Modifier
+                    .align(CenterHorizontally)
+                    .clickable { }, text = "Already got an account? Click here!"
+                )
+            }
+            Spacer(modifier = Modifier.weight(2.0f))
+        }
 }
 
 @Composable

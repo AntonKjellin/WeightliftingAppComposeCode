@@ -1,4 +1,4 @@
 package com.example.weightliftingappcomposecode.screens
 
-class ProfileScrren {
+class TemplateGroupScreen {
 }

@@ -1,6 +1,5 @@
 package com.example.weightliftingappcomposecode.models
 
-import android.app.Activity
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import com.example.weightliftingappcomposecode.auth.FirebaseAuthService
